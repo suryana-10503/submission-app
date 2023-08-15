@@ -9,9 +9,9 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Submission extends Model
 {
     use HasFactory;
-    public function user(): BelongsTo
+    public function submitter(): BelongsTo
     {
-      return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function status(): BelongsTo
