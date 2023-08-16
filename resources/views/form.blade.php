@@ -1,5 +1,4 @@
 @extends('layout')
-
 @section('content')
     <section class="py-6">
         <div class="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
